@@ -1,0 +1,287 @@
+export type Product = {
+  slug: string;
+  name: string;
+  series: 'Ultra-Thin Series' | 'Eco-Friendly Series' | 'Economy Systems';
+  seriesColor: string;
+  icon: string;
+  gradient: string;
+  lambda: string;
+  thickness: string;
+  fire: 'A1' | 'B1';
+  density: string;
+  tempRange: string;
+  moq: string;
+  leadTime: string;
+  incoterm: string;
+  summary: string;
+  specs: string[];
+  applications: string[];
+  certifications: string[];
+};
+
+export const products: Product[] = [
+  {
+    slug: 'aerogel-blanket-tc-ag15',
+    name: 'Aerogel Blanket TC-AG15',
+    series: 'Ultra-Thin Series',
+    seriesColor: '#0EA5E9',
+    icon: '🔥',
+    gradient: 'linear-gradient(135deg,rgba(14,165,233,0.20),rgba(14,165,233,0.05))',
+    lambda: '0.015',
+    thickness: '10 / 15 / 20 / 25 mm',
+    fire: 'B1',
+    density: '130 kg/m³',
+    tempRange: '−200 °C to 650 °C',
+    moq: '50 m²',
+    leadTime: '12 working days',
+    incoterm: 'FOB Qingdao · CIF Rotterdam / Hamburg · DDP',
+    summary:
+      'Flexible silica aerogel blanket reinforced with glass fibre. Delivers 3–5× the thermal resistance of conventional mineral wool at a quarter of the thickness, and tolerates extreme temperatures from cryogenic service to 650 °C.',
+    specs: [
+      'λ = 0.015 W/(m·K)',
+      'Fire class B1 (EN 13501-1)',
+      '−200 °C to 650 °C',
+      'Water vapour open',
+      'Flexible / rollable',
+      'Width 1000 / 1200 mm',
+    ],
+    applications: [
+      'Historic façade and roof retrofits',
+      'Industrial piping and valve insulation',
+      'LNG / petrochemical pipe sections',
+      'EV battery pack thermal barriers',
+      'Slip-over retrofit without excavation',
+    ],
+    certifications: ['CE / EN 13167', 'EN 13501-1 B1', 'ASTM C592', 'EN 14304'],
+  },
+  {
+    slug: 'vacuum-insulation-panel-vip-25',
+    name: 'Vacuum Insulation Panel VIP-25',
+    series: 'Ultra-Thin Series',
+    seriesColor: '#818CF8',
+    icon: '🧊',
+    gradient: 'linear-gradient(135deg,rgba(99,102,241,0.20),rgba(99,102,241,0.05))',
+    lambda: '0.004',
+    thickness: '20 / 25 / 30 mm',
+    fire: 'A1',
+    density: '≈ 5 kg/m²',
+    tempRange: '−40 °C to 80 °C',
+    moq: '100 m²',
+    leadTime: '15 working days',
+    incoterm: 'FOB Qingdao · CIF Rotterdam · DDP on request',
+    summary:
+      'Enclosed evacuated core with low-emissivity glass skins. The lowest λ-value of any building-envelope product on this site — roughly six times better than mineral wool at equal thickness. Custom panel sizes cut to drawing.',
+    specs: [
+      'λ = 0.004 W/(m·K)',
+      'Fire class A1 (non-combustible core)',
+      'Thickness 20–30 mm',
+      'Custom sizes up to 1200 × 600 mm',
+      'Enclosed edge seal',
+      ' puncture-resistant core',
+    ],
+    applications: [
+      'Space-constrained wall retrofits',
+      'Cold-room and freezer envelopes',
+      'Campervan and RV interiors',
+      'Historic interiors with depth limits',
+      'Modular prefab panels',
+    ],
+    certifications: ['CE / EN 17140', 'EN 13501-1 A1', 'REACH', 'ISO 9001'],
+  },
+  {
+    slug: 'hemp-fiber-board-hf-50',
+    name: 'Hemp Fiber Board HF-50',
+    series: 'Eco-Friendly Series',
+    seriesColor: '#22C55E',
+    icon: '🌿',
+    gradient: 'linear-gradient(135deg,rgba(34,197,94,0.20),rgba(34,197,94,0.05))',
+    lambda: '0.038',
+    thickness: '30 / 50 / 80 / 100 mm',
+    fire: 'B1',
+    density: '50 kg/m³',
+    tempRange: '−30 °C to 80 °C',
+    moq: '1 × 20GP',
+    leadTime: '20 working days',
+    incoterm: 'FOB Qingdao · CIF Hamburg · DDP available',
+    summary:
+      'Compressed industrial hemp fibre board. Stores biogenic carbon while regulating indoor humidity, with zero VOC emissions and no added flame retardants — the default choice for Passivhaus and LEED projects.',
+    specs: [
+      'λ = 0.038 W/(m·K)',
+      'Fire class B1',
+      'Density 50 kg/m³',
+      'Hygrothermal class 3 MBV',
+      'Zero VOC / no added flame retardants',
+      'Carbon-negative',
+    ],
+    applications: [
+      'Passivhaus and zero-energy envelopes',
+      'Timber-frame and CLT walls',
+      'Internal wall insulation',
+      'Acoustic and hygrothermal comfort',
+      'LEED / BREEAM bio-material credit',
+    ],
+    certifications: ['PEFC / FSC chain of custody', 'REACH', 'EN 13501-1 B1', 'PHI listed'],
+  },
+  {
+    slug: 'carbonised-cork-board-cc-30',
+    name: 'Carbonised Cork Board CC-30',
+    series: 'Eco-Friendly Series',
+    seriesColor: '#2DD4BF',
+    icon: '🪵',
+    gradient: 'linear-gradient(135deg,rgba(20,184,166,0.20),rgba(20,184,166,0.05))',
+    lambda: '0.040',
+    thickness: '30 / 40 / 60 / 80 mm',
+    fire: 'A1',
+    density: '110–120 kg/m³',
+    tempRange: '−40 °C to 120 °C',
+    moq: '200 m²',
+    leadTime: '18 working days',
+    incoterm: 'FOB Qingdao · CIF Hamburg · DDP available',
+    summary:
+      'Expanded cork agglomerate expanded without heat and finished with a natural carbon layer. Class A1 non-combustible, dimensionally stable under moisture cycling, and fully renewable from Portuguese cork oak bark.',
+    specs: [
+      'λ = 0.040 W/(m·K)',
+      'Fire class A1',
+      'Thickness 30–80 mm',
+      'Dimensionally stable, no degradation over time',
+      'REACH compliant',
+      'Renewable raw material',
+    ],
+    applications: [
+      'Roof and flat-roof insulation',
+      'Exterior render carrier boards',
+      'Cavity-wall insulation',
+      'Fire-safe soffits and ceilings',
+      'Reclaimed / heritage materials',
+    ],
+    certifications: ['CE / EN 13170', 'EN 13501-1 A1', 'REACH', 'FSC 100%'],
+  },
+  {
+    slug: 'seps-graphite-eps-se-031',
+    name: 'SEPS Graphite EPS SE-031',
+    series: 'Economy Systems',
+    seriesColor: '#F59E0B',
+    icon: '⚫',
+    gradient: 'linear-gradient(135deg,rgba(245,158,11,0.20),rgba(245,158,11,0.05))',
+    lambda: '0.031',
+    thickness: '20–300 mm',
+    fire: 'B1',
+    density: '15–30 kg/m³',
+    tempRange: '−30 °C to 80 °C',
+    moq: '1 × 40HQ',
+    leadTime: '10 working days',
+    incoterm: 'EXW factory · FOB Qingdao · CIF Rotterdam',
+    summary:
+      'Graphite-reflected expandable polystyrene: the same λ-value as an 80 mm EPS board in 45 mm of thickness. Supplied as a complete ETICS kit — board, adhesive, mesh, mushroom anchors and detailing profiles.',
+    specs: [
+      'λ = 0.031 W/(m·K)',
+      'Fire class B1 (with mineral render topcoat)',
+      'Graphite reflective additive',
+      '20% less thickness vs. white EPS',
+      'Full ETICS system available',
+      'Click-lock and tongue-and-groove',
+    ],
+    applications: [
+      'Large-scale ETICS external wall systems',
+      'New-build residential developments',
+      'Cost-optimised Passivhaus outer layers',
+      'Industrial hall envelopes',
+      'Budget-constrained renovation programmes',
+    ],
+    certifications: ['CE / EN 13163', 'EN 13501-1 B1', 'ISO 9001', 'EPD available'],
+  },
+  {
+    slug: 'ufh-mushroom-board-mb-20',
+    name: 'UFH Mushroom Board MB-20',
+    series: 'Economy Systems',
+    seriesColor: '#F87171',
+    icon: '🔧',
+    gradient: 'linear-gradient(135deg,rgba(239,68,68,0.20),rgba(239,68,68,0.05))',
+    lambda: '0.033',
+    thickness: '20 / 25 / 30 / 40 mm',
+    fire: 'B1',
+    density: '≥ 40 kg/m³',
+    tempRange: '−30 °C to 80 °C',
+    moq: '500 m²',
+    leadTime: '14 working days',
+    incoterm: 'FOB Qingdao · CIF Rotterdam · DDP available',
+    summary:
+      'Extruded polystyrene underfloor heating board with mushroom-head fixing and interlocking edge profiles. Rated to 5 kN/m² for screed systems, supplied complete with aluminium foil facing, fixing clips and edge tape.',
+    specs: [
+      'λ = 0.033 W/(m·K)',
+      'Mushroom-head fixing Ø16 / Ø20 mm',
+      'Compressive load 5 kN/m²',
+      'Click-lock edge profile',
+      'Aluminium foil facing',
+      'Complete kit incl. clips and foil',
+    ],
+    applications: [
+      'Underfloor heating screeds',
+      'Ground-slab floor build-ups',
+      'Cold-floor retrofits',
+      'Large commercial floor plates',
+      'One-supplier systems procurement',
+    ],
+    certifications: ['CE / EN 13164', 'EN 13501-1 B1', 'REACH', 'ISO 9001'],
+  },
+];
+
+export const comparisonRows = [
+  {
+    name: 'Aerogel Blanket TC-AG15',
+    lambda: '0.015',
+    thickness: '~20mm',
+    bar: '12%',
+    barTone: 'best',
+    fire: 'B1' as const,
+    category: 'Ultra-Thin',
+    highlight: true,
+  },
+  {
+    name: 'Vacuum Insulation Panel VIP-25',
+    lambda: '0.004',
+    thickness: '~7mm',
+    bar: '5%',
+    barTone: 'best',
+    fire: 'A1' as const,
+    category: 'Ultra-Thin',
+    highlight: true,
+  },
+  {
+    name: 'Hemp Fiber Board HF-50',
+    lambda: '0.038',
+    thickness: '~55mm',
+    bar: '32%',
+    barTone: 'good',
+    fire: 'B1' as const,
+    category: 'Eco',
+  },
+  {
+    name: 'Carbonised Cork Board CC-30',
+    lambda: '0.040',
+    thickness: '~60mm',
+    bar: '35%',
+    barTone: 'good',
+    fire: 'A1' as const,
+    category: 'Eco',
+  },
+  {
+    name: 'SEPS Graphite EPS SE-031',
+    lambda: '0.031',
+    thickness: '~45mm',
+    bar: '27%',
+    barTone: 'mid',
+    fire: 'B1' as const,
+    category: 'Economy',
+  },
+  {
+    name: 'Mineral Wool (reference)',
+    lambda: '0.040',
+    thickness: '~100mm',
+    bar: '80%',
+    barTone: 'low',
+    fire: 'A1' as const,
+    category: 'Conventional',
+    muted: true,
+  },
+];
